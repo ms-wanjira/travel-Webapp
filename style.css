@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
 
 :root {
-   --overlay-color: #f4bc0324;
+   --overlay-color: #473925e3;
 
 
 }
-
-
-
 
 *{
     box-sizing: border-box;
@@ -24,7 +21,7 @@
     padding:100px;
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     background: #111;
     color: #fff;
     z-index: 2;
@@ -47,26 +44,29 @@
 }
 .toggle{
     position: relative;
+    justify-content: space-between;
     width:60px;
     height:60px;
-    background:url(/download.png);
+    background:url(/icons8-menu-50.png);
     background-repeat: no-repeat;
     background-size: 30px;
-    background-position:center;
+    background-position:space-between;
     cursor: pointer;
 
 
 }
 
 .toggle.active{
-    background:url(/white-close-button-png-16.png);
+    background:url(/icons8-macos-close-32.png);
+    justify-content: space-around;
     background-repeat: no-repeat;
     background-size: 30px;
-    background-position:center;   
+    background-position:space-between;   
 }
 
 .showcase video{
     position: absolute;
+    justify-content: space-between;
     top: 0;
     left:0;
     width:100%;
@@ -89,18 +89,18 @@
 
 }
 .text{
-    position: relative;
+    position: absolute;
     z-index: 10;
 }
 .text h2{
-    font-size:5em;
-    font-weight: 800;
+    font-size:4em;
+    font-weight: 700;
     line-height: 1em; 
     text-transform: uppercase;
 }
 .text h3{
     font-size:5em;
-    font-weight: 7    00;
+    font-weight: 500;
     line-height: 1em; 
     text-transform: uppercase;
 }
@@ -151,9 +151,20 @@
    right:0;
    width:300px;
    height:100px;
-   display: flex;
+   display: inline-block;
    justify-content: center;
 }
+/* .menu.image{
+    /* position:absolute; */
+    /* background-image: url(/pexels-rachel-claire-4577784.jpg);
+    background-repeat: no-repeat; */
+    /* left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 0.8;
+/* }  */ 
+    
 .menu ul{
     position:relative;
     list-style: none;
@@ -164,14 +175,14 @@
    color:#111;
 }
 .menu ul li a:hover{
-    color: var(--overlay-color);
+    color: blue;
 }
 
 .social li a:hover{
     transform: scale(0.5) translateY(-15px);
 } 
 
-@media (max-width: 991px) {
+@media (max-width: 1100px) {
     .showcase,
     .showcase header { 
         padding: 40px;
