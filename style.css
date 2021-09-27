@@ -42,7 +42,7 @@
    text-transform: uppercase; 
    cursor: pointer;
 }
-.toggle{
+/* .toggle{
     position: relative;
     justify-content: space-between;
     width:60px;
@@ -54,15 +54,15 @@
     cursor: pointer;
 
 
-}
-
+} */
+/* 
 .toggle.active{
     background:url(/icons8-macos-close-32.png);
     justify-content: space-around;
     background-repeat: no-repeat;
     background-size: 30px;
     background-position:space-between;   
-}
+} */
 
 .showcase video{
     position: absolute;
@@ -74,9 +74,9 @@
     object-fit: cover;
     opacity: 0.8;
 }
-.showcase.active{
+/* .showcase.active{
     right: 300px;
-}
+} */
 
 .overlay{
     position: absolute;
@@ -145,7 +145,7 @@
     transform: scale(0.5);
     transition: 0.5s;
 }
-.menu{
+/* .menu{
    position: absolute; 
    top:0;
    right:0;
@@ -153,7 +153,7 @@
    height:100px;
    display: inline-block;
    justify-content: center;
-}
+} */
 /* .menu.image{
     /* position:absolute; */
     /* background-image: url(/pexels-rachel-claire-4577784.jpg);
@@ -164,7 +164,7 @@
     object-fit: cover;
     opacity: 0.8;
 /* }  */ 
-    
+/*     
 .menu ul{
     position:relative;
     list-style: none;
@@ -176,7 +176,7 @@
 }
 .menu ul li a:hover{
     color: blue;
-}
+} */
 
 .social li a:hover{
     transform: scale(0.5) translateY(-15px);
