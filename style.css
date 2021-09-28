@@ -2,8 +2,6 @@
 
 :root {
    --overlay-color: #473925e3;
-
-
 }
 
 *{
@@ -36,33 +34,33 @@
     z-index:1000;
     display: flex;
     align-items:center;
+    opacity: 0.9;
     justify-content: space-between;
 }
 .logo{
    text-transform: uppercase; 
    cursor: pointer;
 }
-/* .toggle{
+.toggle{
     position: relative;
     justify-content: space-between;
-    width:60px;
-    height:60px;
+    opacity: 0.4;
+    width:50px;
+    height:50px;
     background:url(/icons8-menu-50.png);
     background-repeat: no-repeat;
     background-size: 30px;
     background-position:space-between;
     cursor: pointer;
+}
 
-
-} */
-/* 
 .toggle.active{
     background:url(/icons8-macos-close-32.png);
-    justify-content: space-around;
+    justify-content: space-between;
     background-repeat: no-repeat;
     background-size: 30px;
     background-position:space-between;   
-} */
+ }
 
 .showcase video{
     position: absolute;
@@ -72,11 +70,11 @@
     width:100%;
     height:100%;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 0.7;
 }
-/* .showcase.active{
+ .showcase.active{
     right: 300px;
-} */
+} 
 
 .overlay{
     position: absolute;
@@ -145,7 +143,7 @@
     transform: scale(0.5);
     transition: 0.5s;
 }
-/* .menu{
+ .menu{
    position: absolute; 
    top:0;
    right:0;
@@ -153,18 +151,19 @@
    height:100px;
    display: inline-block;
    justify-content: center;
-} */
-/* .menu.image{
-    /* position:absolute; */
-    /* background-image: url(/pexels-rachel-claire-4577784.jpg);
-    background-repeat: no-repeat; */
-    /* left:0;
+   /* align-items: center; */
+}  
+   .menu.image{
+    position:absolute;
+    background-image: url(/pexels-rachel-claire-4577784.jpg); 
+    background-repeat: no-repeat; 
+    left:0;
     width:100%;
     height:100%;
     object-fit: cover;
     opacity: 0.8;
-/* }  */ 
-/*     
+ }  
+     
 .menu ul{
     position:relative;
     list-style: none;
@@ -176,7 +175,7 @@
 }
 .menu ul li a:hover{
     color: blue;
-} */
+} 
 
 .social li a:hover{
     transform: scale(0.5) translateY(-15px);
@@ -185,7 +184,7 @@
 @media (max-width: 1100px) {
     .showcase,
     .showcase header { 
-        padding: 40px;
+        padding: 30px;
     }
     .text h2 {
         font-size: 3em;
